@@ -11,15 +11,19 @@ import pandas as pd
 import warnings
 import base64
 import io
+from flask import Flask
 warnings.filterwarnings('ignore')
 from pg_query import query_biopsyresult, query_hp_raw
 
 
-# initialize server for your app
-import flask # a lay out
+# initialize server for your app deployment
+server = Flask(__name__)
 
 # making a dash to run in the server __name__; stylesheet = html styling
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, server = server, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+# if deploy onto a server
+server = app.server
 
 
 # create a background template for plots
@@ -519,9 +523,7 @@ def update_figure_from_upload(template, xaxis_column, yaxis_columns):
 
     return fig
 
-
-
 if __name__ == "__main__":
-    app.run_server(debug=True, host='0.0.0.0', port=8080)
-
+    #app.run_server(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=False)
     #kill port https://stackoverflow.com/questions/73309491/port-xxxx-is-in-use-by-another-program-either-identify-and-stop-that-program-o
