@@ -1,0 +1,12 @@
+git commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
+
+remove file - git rm (file1 file2 etc) -> git commit -m "comment" -> git push
+update edited file -git add file1 file2 etc -> git commit -m "comment" -> git push
+
+#################################################
+
+deploying dash app on pythonanywhere:
+https://www.youtube.com/watch?v=WOWVat5BgM4
+
+deploying on render
+https://github.com/thusharabandara/dash-app-render-deployment
