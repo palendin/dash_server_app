@@ -8,9 +8,6 @@ numpy
 pandas
 scikit_learn
 plotly
-warnings
-base64
-io
 matplotlib
 openpyxl
 gunicorn
