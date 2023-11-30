@@ -10,3 +10,9 @@ https://www.youtube.com/watch?v=WOWVat5BgM4
 
 deploying on render
 https://github.com/thusharabandara/dash-app-render-deployment
+
+
+connections on render:
+if time out error, try changing start commmand to gunicorn app:app -t 1800 --keep-alive 1800
+if connection error about TCP/IP address, it might be complaining about google cloud postgresql connection allowance. Add render IP to the google postgresql connection setting
+
