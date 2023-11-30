@@ -1,4 +1,22 @@
-git commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
+to connect a vscode folder to github:
+1) firstcreate a new repository on the command line
+
+2) go to the folder in vscode, and do the following:
+  echo "# MachineLearning" >> README.md
+  git init (adds git folder in source control in vscode. THIS IS HOW IT CONNECTS TO GITHUB, VERY IMPORTANT)
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/palendin/MachineLearning.git
+  git push -u origin maingit commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
+
+
+push an existing repository from the command line
+git remote add origin https://github.com/palendin/MachineLearning.git
+  git branch -M main
+  git push -u origin main
+
+
 
 remove file - git rm (file1 file2 etc) -> git commit -m "comment" -> git push
 update edited file -git add file1 file2 etc -> git commit -m "comment" -> git push
