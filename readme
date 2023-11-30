@@ -1,4 +1,4 @@
-to connect a vscode folder to github:
+################################################# to connect a vscode folder to github:  #################################################
 1) firstcreate a new repository on the command line
 
 2) go to the folder in vscode, and do the following:
@@ -11,24 +11,26 @@ to connect a vscode folder to github:
   git push -u origin maingit commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
 
 
+################################################# git hub commands #################################################
+https://www.geeksforgeeks.org/how-to-push-folders-from-local-pc-to-github-using-git-commands/
 push an existing repository from the command line
 git remote add origin https://github.com/palendin/MachineLearning.git
   git branch -M main
   git push -u origin main
 
-
-
+git add . -> adds all file to repo
 remove file - git rm (file1 file2 etc) -> git commit -m "comment" -> git push
 update edited file -git add file1 file2 etc -> git commit -m "comment" -> git push
 
-#################################################
+################################################# deployment  #################################################
 
 deploying dash app on pythonanywhere:
 https://www.youtube.com/watch?v=WOWVat5BgM4
 
+
 deploying on render
 https://github.com/thusharabandara/dash-app-render-deployment
-
+gunnicorn editing timeout https://docs.gunicorn.org/en/stable/settings.html#timeout
 
 connections on render:
 if time out error, try changing start commmand to gunicorn app:app -t 1800 --keep-alive 1800
