@@ -48,7 +48,7 @@ def query_hp_raw(experiment_id):
 
     cur = connection.cursor()
     cur.execute("""SELECT * 
-                from analytical_db.hydroxyproline
+                from analytical_db.hydroxyproline_raw
                 Left join tracker.analytical_tracker using(experiment_id)
                 LEFT join biomaterial_scaffold.biomaterial using(biomaterial_id)
                 """
