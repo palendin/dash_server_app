@@ -8,7 +8,9 @@
   git commit -m "first commit"
   git branch -M main
   git remote add origin https://github.com/palendin/MachineLearning.git
-  git push -u origin maingit commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
+  git push -u origin main 
+
+git commands (first the folder should be linked in source control): https://www.tutorialspoint.com/how-to-upload-a-project-to-github-from-vs-code
 
 
 ################################################# git hub commands #################################################
