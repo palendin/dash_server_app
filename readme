@@ -18,6 +18,7 @@ git remote add origin https://github.com/palendin/MachineLearning.git
   git branch -M main
   git push -u origin main
 
+git clone <HTTPS from git> -> clones repistory to the current local directory in vscode
 git add . -> adds all file to repo
 remove file - git rm (file1 file2 etc) -> git commit -m "comment" -> git push
 update edited file -git add file1 file2 etc -> git commit -m "comment" -> git push
